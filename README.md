@@ -5,7 +5,7 @@
 | Nome | RM |
 |------|----|
 Gabriel Fagundes | RM: 569074
-Gabriel Freitas | 
+Gabriel Freitas | RM: 572943
 Giovanni Merlotti | RM: 573721
 Glauco Kelly | RM: 572840
 Sergio Augusto Amaral | RM: 570184
