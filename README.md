@@ -132,17 +132,7 @@ do lojista.
 
 ## Fluxograma de Arquitetura Funcional
 
-```mermaid
-flowchart TD
-    A[Interface: Operador Comercial faz pergunta sobre operação]
-    B[Orquestração: LangChain recebe entrada e anexa System Prompt]
-    C[Motor IA: OpenAI API interpreta intenção e formula consulta ao banco de dados]
-    D[(Camada Digital: Banco de Dados retorna eventos OCPP e MODBUS)]
-    F[Interface: Chatbot exibe resposta gerencial sobre faturamento e demanda]
+<img width="2758" height="1547" alt="fluxograma_sprint1_chatbot" src="https://github.com/user-attachments/assets/389d2d1b-db95-49a9-a03b-e034ea8a5b22" />
 
-    A --> B
-    B --> C
-    C --> D
-    D --> C
-    C --> F
-```
+
+
