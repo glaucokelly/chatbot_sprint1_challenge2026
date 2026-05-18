@@ -39,6 +39,9 @@ A IA está justificada como motor lógico da solução, e não apenas para enfei
 | **Modelo LLM OpenAI API** | Responsável pelo raciocínio estruturado da aplicação. A escolha se justifica pela maturidade da API de *function calling* da OpenAI, que permite ao modelo invocar consultas externas ao banco de dados de forma nativa e estruturada, e pela integração nativa com o LangChain, garantindo estabilidade do ecossistema em ambiente de produção. Isso permite analisar o histórico de faturamento de forma eficiente. O uso da inteligência artificial atende à necessidade de operar a recarga pública com preços livremente negociados, conforme estabelece a Resolução Normativa ANEEL nº 1.000/2021. |
 | **Framework LangChain** | Ferramenta de orquestração estrutural. Atua na integração lógica entre o modelo da OpenAI e o banco de dados do sistema de gestão, permitindo buscar os registros da decodificação de eventos de sessão via protocolos industriais em tempo real. |
 | **Linguagem Python** | Padrão da indústria para integração de APIs de inteligência artificial e processamento de dados em back end. A linguagem suporta a integração base exigida entre o EV Charger FIAP, sistemas de pagamento e as APIs GoodWe. |
+| **RAG (Retrieval-Augmented Generation)** | Técnica de recuperação de informação utilizada para consultar o banco de dados em tempo real durante a geração da resposta. Permite que o modelo fundamente suas orientações nos dados reais de sessão, eventos OCPP e MODBUS, em vez de depender apenas do conhecimento parametrizado do LLM. |
+| **Protocolo OCPP** | Open Charge Point Protocol. Protocolo industrial responsável pela comunicação entre os controladores dos carregadores e a plataforma de gestão. Viabiliza o registro de eventos de sessão em tempo real, incluindo início, fim e energia entregue em cada recarga. |
+| **Protocolo MODBUS** | Protocolo de comunicação serial utilizado para a leitura física dos medidores de energia instalados nos eletropostos. Garante a exatidão da medição do consumo real de cada sessão, sendo a base para a precisão do faturamento gerado pelo sistema. |
 
 ---
 
@@ -49,9 +52,7 @@ Você é a Inteligencia Artificial Especialista em Gestão Comercial do sistema 
 responsável pela gestão de eletropostos em estabelecimentos como shoppings,
 supermercados e estacionamentos.
 
-Sua função principal é utilizar processamento de linguagem natural NLP para traduzir
-o volume contínuo de dados brutos de sessão em orientações diretas para o gestor. Você deve justificar
-o faturamento e as decisões autônomas tomadas pelo sistema.
+Sua função principal é traduzir o volume contínuo de dados brutos de sessão em orientações diretas para o gestor. Você deve justificar o faturamento e as decisões autônomas tomadas pelo sistema.
 
 Ao formular suas respostas, obedeça obrigatoriamente às seguintes diretrizes operacionais:
 
