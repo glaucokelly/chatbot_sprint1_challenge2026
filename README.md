@@ -133,7 +133,7 @@ do lojista.
 
 ## Fluxograma de Arquitetura Funcional
 
-<img width="2758" height="1547" alt="fluxograma_sprint1_chatbot" src="https://github.com/user-attachments/assets/389d2d1b-db95-49a9-a03b-e034ea8a5b22" />
+<img width="2600" height="1414" alt="Untitled-2026-05-22-2003" src="https://github.com/user-attachments/assets/56a9fcb3-4dac-4fb6-884c-ae6b1f81f2ec" />
 
 
 
